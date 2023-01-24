@@ -1,0 +1,107 @@
+:root {
+    --matrixbgi: url(https://img.freepik.com/free-vector/matrix-style-binary-code-digital-background-with-falling-numbers_1017-25336.jpg?w=1800&t=st=1674558348~exp=1674558948~hmac=fa0665d825f28162a218cbcefe9f6aa5fa7c20f10c1c8b2c5dbe6e16b2ab4aac);
+    --bgcontain: contain;
+    --bordergreen: 10px solid #39ca10;
+    --paddingZero: 0;
+    --marginZero: 0;
+    --textCenter: center;
+    --fontItalic: italic;
+    --oneEM: 1em;
+    --oneHundredPercent: 100%
+}
+
+html {
+    overflow: hidden;
+    height: var(--oneHundredPercent);
+}
+
+body {
+    padding: var(--paddingZero);
+    margin: var(--marginZero);
+    height: var(--oneHundredPercent);
+    overflow: auto;
+}
+
+.my-bottom-border {
+  border-bottom: var(--bordergreen);
+  background-image: var(--matrixbgi);
+  background-size: var(--bgcontain);
+
+}
+
+.headerDiv {
+  text-align: center;
+  padding: 3em 0em;
+}
+
+.plannerList {
+  padding: var(--paddingZero);
+  margin: var(--marginZero);
+}
+
+li input {
+  width: 100%;
+  height: 5em;
+}
+
+li div {
+  background-color: lightgray;
+  border: 1px solid;
+  width: 5.5%;
+  text-align: var(--textCenter);
+}
+
+li input {
+    background-color: darkgray;
+}
+
+li input:hover {
+    background-color: rgb(136, 237, 165);
+}
+
+li button {
+    width: 10%;
+}
+
+.saveEntryBtn:hover {
+  background-color: #39ca10;
+}
+
+footer{
+    border-top: var(--bordergreen);
+    background-image: var(--matrixbgi);
+    background-size: var(--bgcontain);
+    text-align: var(--textCenter);
+    color: white;
+}
+
+footer h6 {
+    font-style: var(--fontItalic);
+    padding-top: var(--oneEM);
+}
+
+footer p {
+    padding: var(--paddingZero);
+    margin: var(--marginZero);
+    font-size: 10px;
+    font-style: var(--fontItalic);
+    padding-bottom: var(--oneEM);
+}
+
+/* media quaries */
+
+@media (max-width: 950px) {
+  li div {
+    width: 10%;
+  }
+}
+
+@media (max-width: 530px) {
+  li div {
+    width: 20%;
+  }
+
+  li button {
+    width: 20%;
+  }
+}
