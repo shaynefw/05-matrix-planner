@@ -29,12 +29,16 @@ $('.saveEntryBtn').on('click', function () {
   }
 })
 
+// when the save button is double clicked the text inside input box, and local storage will be deleted.
+
 $('.saveEntryBtn').on('dblclick', function () {
   let inputBox = $(this).prev()
   inputBox.removeClass('past present future')
   inputBox.val('')
   localStorage.removeItem($(this).closest('li').index())
 })
+
+// the below funtion grabs the value stored in the local storage and applies it to the corresponding input field, also it uses the hour (i.e 13(1PM)) of the input and current time to add the past, present, and future classes to the input field background.
 
 $(document).ready(function () {
   $('.plannerList li').each(function (indexList) {

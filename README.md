@@ -58,9 +58,7 @@ SOFTWARE.
 
 ## Badges
 
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+![JS](https://img.shields.io/badge/Javascript-20.7%25-yellowgreen) ![HTML](https://img.shields.io/badge/HTML-57.4%25-brightgreen) ![CSS](https://img.shields.io/badge/CSS-21.9%25-green) ![JQUERY](https://img.shields.io/badge/JQUERY-inside-blue) ![MIT](https://img.shields.io/badge/License-MIT-teal)
 
 ## Features
 
