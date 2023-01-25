@@ -39,24 +39,36 @@ body {
   margin: var(--marginZero);
 }
 
+.past {
+    background-color: lightgray !important;
+}
+
+.present {
+    background-color: tomato !important;
+}
+
+.future {
+    background-color: lime !important;
+}
+
 li input {
   width: 100%;
   height: 5em;
 }
 
 li div {
-  background-color: lightgray;
+  background-color: rgb(148, 203, 155);
   border: 1px solid;
   width: 5.5%;
   text-align: var(--textCenter);
 }
 
 li input {
-    background-color: darkgray;
+    background-color: rgb(233, 255, 238);
 }
 
 li input:hover {
-    background-color: rgb(136, 237, 165);
+    border: 3px solid rgb(0, 255, 72);
 }
 
 li button {
@@ -64,7 +76,7 @@ li button {
 }
 
 .saveEntryBtn:hover {
-  background-color: #39ca10;
+  background-color: #0c3800;
 }
 
 footer{

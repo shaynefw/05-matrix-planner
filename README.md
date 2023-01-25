@@ -2,16 +2,9 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+This website is a simple day planner application that allows users to schedule their daily tasks and events by the hours between 6AM and 10PM.
 
 ## Table of Contents
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -20,25 +13,22 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+- [Live Github link](https://shaynefw.github.io/05-matrix-planner/)
+- [Github repo](https://github.com/shaynefw/05-matrix-planner)
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+1. To add an event, click on the input field of the desired time slot and type in the event details.
+2. To save the event, click on the save button next to the input field.
+3. To edit or delete an event, double-click on the save button of the corresponding time slot.
+4. The color of the textbox field will change based on the current time and the hour of the event.
+5. A gray textbox means containing entries was scheduled in the past. A red textbox means containing entries were scheduled within the current hour. A green textbox means containing entries are scheduled in the future.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![webscreenshot](./assets/images/Your%20Day%20Planner%20(1).png)
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+[Bootstrap](https://getbootstrap.com/), [jquery](https://jquery.com/),[Dayjs](https://day.js.org/), Prof, Classmates, Instructors.
 
 ## License
 
@@ -66,8 +56,6 @@ SOFTWARE.
 
 ---
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
 ## Badges
 
 ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
@@ -76,7 +64,15 @@ Badges aren't necessary, per se, but they demonstrate street cred. Badges let ot
 
 ## Features
 
-If your project has a lot of features, list them here.
+This site features a calendar display of the current day, month, and year at the top of the page, and a list of hours from 6AM to 5PM. Each hour has an input box and a save button next to it.
+
+The user can enter text in the input box and click the save button to save their task or event for that hour. The text will be saved in the local storage so that it can be retrieved even after the page is refreshed.
+
+The input box for each hour is color coded based on the time of the task or event. Tasks or events entered for hours in the past are given a "past" class, tasks or events entered for the current hour are given a "present" class, and tasks or events entered for hours in the future are given a "future" class.
+
+The user can also double click the save button to reset the input box to normal, remove the text, and remove it from local storage.
+
+The website uses JavaScript and jQuery to handle the logic and interactivity of the day planner application. The time is updated every second using the setInterval function, and the date is displayed using the dayjs library. The website also uses Bootstrap CSS framework to style the layout and elements.
 
 ## How to Contribute
 
